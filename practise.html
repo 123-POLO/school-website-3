@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="/image/png" href="/house.html/FAVICON2.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission form </title>
+  <style>
+    body{background-color: black;}
+    .shape {
+      width: 350px;
+      height: 600px;
+      border-radius: 1rem;
+      border: yellow;
+      background-color: grey;
+      position: absolute;
+      left: 50%;
+      box-shadow: 1px 2px 1px 2px black;
+      overflow: hidden;
+    }
+    .BUTTON{
+      margin: 20%;
+      width: 220px;
+      height: 50px;
+      text-align: center;
+      border-radius: 1rem;
+      background-color: rgb(16, 233, 34);
+       animation-name: kmnj;
+      animation-timing-function: ease;
+      animation-duration: 5s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      animation-direction: alternate;
+}
+@keyframes kmnj {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+             transform: scale(1);
+    }
+}
+    
+  </style>
+</head>
+
+<body>
+  <div class="heading" style="color: aliceblue;">
+    <h2><i>Your Admission Form</i></h2>
+  </div>
+
+  <div class="shape">
+    <label for="name"><i>Name:</i></label><br>
+    <input type="text" id="name" placeholder="Name" size="40"><br>
+    <hr>
+    <label for="email"><i>Email Address:</i></label>
+    <input type="email" id="email" size="40" placeholder="example@123" required><br><br>
+    <hr>
+    <label for="password"><i>Password:</i></label><br>
+    <input type="password" id="password" placeholder="enter password" size="40" required><br>
+    <hr>
+    <label for="phone"><i>Phone Number:</i><br></label>
+    <input type="number" id="phone" size="40" required><br><br>
+    <hr>
+    <label for="date"><i>Birthday:</i></label><br>
+    <input type="date" size="50" id="date"><br>
+    <hr>
+<select> <i>Gender</i>
+  <option value="Male" size="40" ><i>Male</i></option>
+  <option value="Girl" size="40" ><i>Girl</i></option>
+  <option value="others" size="40" ><i>others</i></option>
+  <br><hr>
+<select>
+  <select > <i>CLASSESS</i>
+  <option value="PREP" size="40" ><i>PREP</i></option>
+  <option value="1" size="40" ><i>1</i></option>
+  <option value="2" size="40" ><i>2</i></option>
+</select><br><hr>
+<p><i>THE OTHERS CLASSESS ARE IN OTHER BRANCH OF OUR SCHOOL THANK YOU!</i></p>
+  <HR></HR>
+  <form action="didn.html">
+  <button class="BUTTON"> <I>SUBMIT</I></button>
+  </form>
+  </div>
+</body>
+
+</html>

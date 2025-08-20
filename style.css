@@ -1,0 +1,98 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 1);
+    height: 100vh;
+}
+.solarsystem{
+    width: 300px;
+    height: 300px;
+ position: relative;
+    
+    
+}
+.sun{
+width: 100px;
+height: 100px;
+position: absolute;
+top: 50%;
+left: 45%;
+transform: translate(-50%,-50%);
+background-color: rgb(230, 158, 15);
+border-radius: 50%;
+animation: bounce ;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+transition-property:all 5s ease ;
+box-shadow: 2px 2px 7px 4px rgb(184, 232, 9);
+}
+.sun:hover{
+   transform: scaleY(5.5) scaleX(2.2) rotate(360deg);
+    background-color: rgb(255, 200, 0);
+}
+@keyframes bounce { 
+    0%{
+        transform: translateY(0) rotate(0);
+    }
+    50%{
+        transform: translateY(-10px) rotate(360deg);
+    }
+    100%{
+        transform: translateY(0) rotate(360deg);
+    }
+    
+}
+
+
+.earth{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(3, 236, 181);
+    border-radius: 50%;
+     position: absolute;
+    animation-name: kijuh;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    transition-property: all;
+    box-shadow: 10px 20px 40px yellow;
+    text-align: center;
+}
+@keyframes kijuh {
+    0%{
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+    
+}
+
+.yhu{
+ width: 70px;
+    height: 70px;
+    background-color: rgb(166, 236, 3);
+    border-radius: 50%;
+    animation-name: juh32;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    transition-property: all;
+    transition-duration: 5s;
+}
+@keyframes juh32 {
+    0%{
+        transform: rotate(0deg) translateX(400px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translateX(400px) rotate(-360deg);
+} }
